@@ -96,12 +96,57 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
+  
+  /* General Styles */
+  
+  html {
+    font-size: 1rem;
+  }
+  
+  body {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+  }
+  
+  ul,
+  ol {
+    list-style-type: none;
+  }
+  
+  a {
+    color: #e2e3ed;
+    text-decoration: none;
+  }
+  
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+  }
+  
+  h3,
+  h4 {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+    font-size: 1.125em;
+  }
+  
+  p {
+    font-size: .875em;
+    line-height: 1.285;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
   .content-wrapper {
     width: 90%;
     margin: 50px 0;
   }
   
   /* -------------------- Base Header - Footer Styles -------------------- */
+  
   header {
     display: flex;
     justify-content: center;
@@ -109,11 +154,11 @@
   }
   
   header .content-wrapper {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0;
   }
   
   .header-divider {
@@ -414,7 +459,7 @@
     }
   
     .features .features-item-description {
-      width: 50%;
+      width: 62%;
     }
   
     /* Reviews */
@@ -447,14 +492,14 @@
     }
   
     /* ==========================================================================
-       About Page
-       ========================================================================== */
+     About Page
+     ========================================================================== */
   
     .mission-content {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      padding-top: 20px
+      padding-top: 20px;
     }
   
     .mission-content p {
@@ -472,9 +517,8 @@
     }
   
     /* ==========================================================================
-       FAQ Page
-       ========================================================================== */
-  
+     FAQ Page
+     ========================================================================== */
     .faq .content-wrapper {
       justify-content: space-between;
     }
@@ -488,11 +532,65 @@
     }
   }
   
-  @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+  @media only screen and (min-width:1200px) {
+    /*Desktop styles here*/
+  
+    /* General styles */
+    .content-wrapper {
+      max-width: 960px;
+    }
+  
+    /* Header */
+    header {
+      padding: 15px 0;
+    }
+  
+    /* Hero */
+    .hero-area h1 {
+      width: 80%;
+    }
+  
+    /* Aside */
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
+  
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 30%;
+    }
+  
+    /* Features */
+  
+    .features h2 {
+      width: 90%;
+    }
+  
+    .features article {
+      flex-basis: 33%;
+    }
+  
+    /* Reviews */
+    .reviews article div {
+      width: 42%;
+    }
+  
+    /* ==========================================================================
+    About Page
+    ========================================================================== */
+  
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+      width: 95%;
+    }
+  
+    /* ==========================================================================
+    FAQ Page
+    ========================================================================== */
+    .faq h2 {
+      width: 100%;
+    }
+  
   }
   
   /* ==========================================================================
